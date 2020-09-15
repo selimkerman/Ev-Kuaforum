@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity.UserAddCommentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/userAddCommentToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/userAddCommentCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userAddCommentToolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/userAddCommentImageView"
+                android:layout_width="179dp"
+                android:layout_height="102dp"
+                android:layout_marginStart="8dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/berber1" />
+
+            <TextView
+                android:id="@+id/userAddCommentBarberName"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:text="Berberin Adı"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/userAddCommentImageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/userAddCommentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:text="Randevu Saati"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/userAddCommentImageView"
+                app:layout_constraintTop_toBottomOf="@+id/userAddCommentBarberName" />
+
+            <TextView
+                android:id="@+id/userAddCommentService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:text="Saç Kesimi"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/userAddCommentImageView"
+                app:layout_constraintTop_toBottomOf="@+id/userAddCommentDate" />
+
+            <TextView
+                android:id="@+id/userAddCommentPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="45 TL"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/userAddCommentService"
+                app:layout_constraintTop_toBottomOf="@+id/userAddCommentDate" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="15dp"
+                android:text="Yer : "
+                android:textColor="@color/colorTextBlack"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/userAddCommentImageView"
+                app:layout_constraintTop_toBottomOf="@+id/userAddCommentService" />
+
+            <TextView
+                android:id="@+id/userAddCommentPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:text="İş Yeri"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/userAddCommentService" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RatingBar
+        android:id="@+id/userAddCommentRatingBar"
+        style="@android:style/Widget.Material.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:max="5"
+        android:numStars="5"
+        android:rating="2"
+        android:stepSize="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userAddCommentCardView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userAddCommentInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Yorum Yap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userAddCommentRatingBar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userAddCommentCommentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextBlack" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/userAddCommentButton"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:text="Kaydet"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:onClick="userAddCommentButtonClick"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userAddCommentInputLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

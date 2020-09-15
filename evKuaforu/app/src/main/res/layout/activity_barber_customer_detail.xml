@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BarberActivity.CustomerDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/barberDetailUserToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/barberDetailUserIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/user_icon"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barberDetailUserToolbar" />
+
+    <TextView
+        android:id="@+id/barberDetailUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:text="Hasan Kaya"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/barberDetailUserIcon"
+        app:layout_constraintTop_toBottomOf="@+id/barberDetailUserToolbar" />
+
+    <TextView
+        android:id="@+id/barberDetailUserAppDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="30.04.2020 15:00"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/barberDetailUserName"
+        app:layout_constraintTop_toBottomOf="@+id/barberDetailUserName" />
+
+    <TextView
+        android:id="@+id/barberDetailUserServiceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Saç Kesimi"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/barberDetailUserName"
+        app:layout_constraintTop_toBottomOf="@+id/barberDetailUserAppDate" />
+
+
+    <TextView
+        android:id="@+id/barberDetailUserAdress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Arifbey Mahallesi Atatürk Caddesi No:17 Arifiye, Sakarya"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barberDetailUserServiceName" />
+
+    <TextView
+        android:id="@+id/barberDetailUserToMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Yol Tarifi Al   >"
+        android:onClick="barberDetailUserToMapClick"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barberDetailUserAdress" />
+
+    <Button
+        android:id="@+id/barberDetailUserToChat"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/rounded_button"
+        android:text="Müşteriye Mesaj Gönder"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:onClick="barberDetailUserToChatClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barberDetailUserToMap" />
+
+    <TextView
+        android:id="@+id/barberDetailUserPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="35 TL"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/barberDetailUserServiceName"
+        app:layout_constraintTop_toBottomOf="@+id/barberDetailUserAppDate" />
+</androidx.constraintlayout.widget.ConstraintLayout>

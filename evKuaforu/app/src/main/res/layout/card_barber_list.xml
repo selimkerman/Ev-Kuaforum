@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/barberListCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/barberListPhoto"
+                android:layout_width="411dp"
+                android:layout_height="236dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/berber1" />
+
+            <TextView
+                android:id="@+id/barberListName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Berberin Adı"
+                android:gravity="center"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/barberListPhoto" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="11dp"
+                app:layout_constraintStart_toEndOf="@+id/barberListName"
+                app:layout_constraintTop_toBottomOf="@+id/barberListPhoto"
+                app:srcCompat="@drawable/icon_star_black" />
+
+            <TextView
+                android:id="@+id/barberListPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="4.4"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/barberListPhoto" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="13dp"
+                app:layout_constraintStart_toEndOf="@+id/barberListPoint"
+                app:layout_constraintTop_toBottomOf="@+id/barberListPhoto"
+                app:srcCompat="@drawable/icon_comment_blue" />
+
+            <TextView
+                android:id="@+id/barberListCommentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/barberListPhoto" />
+
+            <TextView
+                android:id="@+id/barberListAdress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/barberListName"
+                app:layout_constraintTop_toBottomOf="@+id/barberListName"
+                tools:text="Arifbey Mahallesi Atatürk Caddesi No : 45" />
+
+            <TextView
+                android:id="@+id/barberListProvince"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="18sp"
+                android:paddingBottom="15dp"
+                app:layout_constraintStart_toStartOf="@+id/barberListAdress"
+                app:layout_constraintTop_toBottomOf="@+id/barberListAdress"
+                tools:text="Arifiye, Sakarya" />
+
+            <TextView
+                android:id="@+id/barberListDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="15.4 Km"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                app:layout_constraintTop_toBottomOf="@+id/barberListAdress" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/colorTextGrey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="66dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toEndOf="@+id/barberListProvince"
+                app:layout_constraintTop_toBottomOf="@+id/barberListAdress"
+                app:srcCompat="@drawable/icon_location_on" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/actionBarberAppointments"
+        android:icon="@drawable/icon_action_barber_appointments"
+        android:title="Randevularım" />
+    <item
+        android:id="@+id/actionBarberCustomers"
+        android:icon="@drawable/icon_action_barber_customers"
+        android:title="Müşterilerim" />
+    <item
+        android:id="@+id/actionBarberChats"
+        android:icon="@drawable/icon_action_barber_chat"
+        android:title="Mesajlarım" />
+    <item
+        android:id="@+id/actionBarberSettings"
+        android:icon="@drawable/icon_action_barber_settings"
+        android:title="Ayarlarım" />
+
+</menu>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/barberAppointmentsCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="1dp"
+        android:padding="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/barberAppointmentsUserIcon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="32dp"
+                android:background="@drawable/user_icon"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/barberAppointmentsUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="16dp"
+                android:text="Müşterinin Adı"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/barberAppointmentsUserIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/barberAppointmentsTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Randevu Saati"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/barberAppointmentsUserName"
+                app:layout_constraintTop_toBottomOf="@+id/barberAppointmentsUserName" />
+
+            <TextView
+                android:id="@+id/barberAppointmentsService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Saç Kesimi"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/barberAppointmentsUserName"
+                app:layout_constraintTop_toBottomOf="@+id/barberAppointmentsTime" />
+
+            <TextView
+                android:id="@+id/barberAppointmentsPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="35 TL"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/barberAppointmentsService"
+                app:layout_constraintTop_toBottomOf="@+id/barberAppointmentsTime" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="15dp"
+                android:text="Yer : "
+                android:textColor="@color/colorTextBlack"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/barberAppointmentsUserName"
+                app:layout_constraintTop_toBottomOf="@+id/barberAppointmentsService" />
+
+            <TextView
+                android:id="@+id/barberAppointmentsPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:text="İş Yeri"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/textView13"
+                app:layout_constraintTop_toBottomOf="@+id/barberAppointmentsService" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

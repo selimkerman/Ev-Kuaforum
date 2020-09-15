@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".BarberActivity.BarberSignupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/app_logo"
+                android:layout_width="130dp"
+                android:layout_height="135dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/app_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/signupBarberTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Kuaför Üyelik"
+                android:textColor="@color/colorLoginText"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/app_logo" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutBarberName"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="36dp"
+                android:ems="10"
+                android:textColorHint="@color/colorLoginText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/signupBarberTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signupBarberName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/icon_person"
+                    android:drawableLeft="@drawable/icon_person"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:hint="Kullanıcı Adı"
+                    android:inputType="text"
+                    android:textColor="@color/colorLoginText"
+                    android:textColorHint="@color/colorLoginText"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="274dp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutStoreName"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="36dp"
+                android:ems="10"
+                android:textColorHint="@color/colorLoginText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutBarberName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signupBarberShopName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/icon_store"
+                    android:drawableLeft="@drawable/icon_store"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:hint="Kuaför Adı"
+                    android:inputType="text"
+                    android:textColor="@color/colorLoginText"
+                    android:textColorHint="@color/colorLoginText"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="274dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutBarberProvince"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="36dp"
+                android:ems="10"
+                android:textColorHint="@color/colorLoginText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutStoreName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signupBarberProvince"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/icon_province"
+                    android:drawableLeft="@drawable/icon_province"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:hint="Şehir"
+                    android:inputType="text"
+                    android:textColor="@color/colorLoginText"
+                    android:textColorHint="@color/colorLoginText"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="274dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutBarberPhone"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="36dp"
+                android:ems="10"
+                android:textColorHint="@color/colorLoginText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutBarberProvince">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signupBarberPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/icon_phone"
+                    android:drawableLeft="@drawable/icon_phone"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:hint="Telefon"
+                    android:inputType="phone"
+                    android:textColor="@color/colorLoginText"
+                    android:textColorHint="@color/colorLoginText"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="274dp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutBarberMail"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="36dp"
+                android:ems="10"
+                android:textColorHint="@color/colorLoginText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutBarberPhone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signupBarberEMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/icon_email"
+                    android:drawableLeft="@drawable/icon_email"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:hint="E Mail"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorLoginText"
+                    android:textColorHint="@color/colorLoginText"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="274dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutBarberPassword"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="36dp"
+                android:ems="10"
+                android:textColorHint="@color/colorLoginText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutBarberMail"
+                app:passwordToggleContentDescription="description"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorLoginText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signupBarberPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/icon_password"
+                    android:drawableLeft="@drawable/icon_password"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:hint="Şifre"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorLoginText"
+                    android:textColorHint="@color/colorLoginText"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.708"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="488dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/signupBarberButton"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_button"
+                android:onClick="barberSignupButtonClick"
+                android:text="Üye Ol"
+                android:textColor="@color/colorLoginText"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/barberSignupRadioGroup" />
+
+            <TextView
+                android:id="@+id/signupBarberTypeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="10dp"
+                android:text="Kuaför Türü :"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutBarberPassword" />
+
+            <RadioGroup
+                android:id="@+id/barberSignupRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/signupBarberTypeText"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutBarberPassword">
+
+                <RadioButton
+                    android:id="@+id/barberMaleRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorLoginText"
+                    android:text="Erkek"
+                    android:textColor="@color/colorLoginText" />
+
+                <RadioButton
+                    android:id="@+id/barberFemaleRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorLoginText"
+                    android:text="Kadın"
+                    android:textColor="@color/colorLoginText" />
+
+                <RadioButton
+                    android:id="@+id/barberAllRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorLoginText"
+                    android:text="Hepsi"
+                    android:textColor="@color/colorLoginText" />
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
